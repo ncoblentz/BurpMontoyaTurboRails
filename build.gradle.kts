@@ -51,8 +51,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/ncoblentz/burpmontoyaturborails")
             credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("GHUSERNAME")
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("GHTOKEN")
             }
         }
     }
